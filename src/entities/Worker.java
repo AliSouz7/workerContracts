@@ -1,6 +1,5 @@
 package entities;
 
-import enumentities.WorkerLevel;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -8,7 +7,7 @@ import java.util.List;
 public class Worker {
 
     private String name;
-    private WorkerLevel level;
+    private String level;
     private Double baseSalary;
 
     private Department department;
@@ -21,7 +20,7 @@ public class Worker {
 
     //gerar construtor sem lista
 
-    public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
+    public Worker(String name, String level, Double baseSalary, Department department) {
         this.name = name;
         this.level = level;
         this.baseSalary = baseSalary;
@@ -36,11 +35,11 @@ public class Worker {
         this.name = name;
     }
 
-    public WorkerLevel getLevel() {
+    public String getLevel() {
         return level;
     }
 
-    public void setLevel(WorkerLevel level) {
+    public void setLevel(String level) {
         this.level = level;
     }
 
